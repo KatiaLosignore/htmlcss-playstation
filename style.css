@@ -110,6 +110,6 @@ footer ul a {
     color: white;
 }
 
-footer .col-md-4 {
-    flex: 1 0 auto;
+.sie-logo {
+    width: 90px;
 }
