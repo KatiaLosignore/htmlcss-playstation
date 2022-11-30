@@ -8,8 +8,14 @@
     width: 10px;
 }
 
-header nav li {
-    font-weight: bold;
+
+.button-color {
+    background-color: rgb(54,54,54);
+}
+
+header form #lens {
+    width: 20px;
+    margin-left: 5px;
 }
 
 
@@ -18,7 +24,7 @@ header nav li {
 #main-jumbo {
     background-image: url('img/jumbo-bg.png');
     height: 600px; 
-   margin-top: 110px;
+    margin-top: 110px;
 }
 
 .jumbotron {
@@ -29,23 +35,14 @@ header nav li {
 
 
 
-/* Cards */
-
-#cards img{
-    width: 230px;
-}
-
-/* <!-- Console Playstation --> */
-
-#playstation-console {
-    width: 300px;
-}
-
 /* <!-- Components Playstation  --> */
 
 #components-playstation img {
-    width: 150px;
+    width: 110px;
+    filter: opacity(0.5);
 }
+
+
 
 /* <!-- Adventure jumbo --> */
 
@@ -75,9 +72,11 @@ header nav li {
     font-weight: bold;
 }
 
-#playstation-plus img {
-    width: 350px;
+#playstation-plus p {
+    font-weight: 600;
 }
+
+
 
 /* <!-- PlayStation now --> */
 
@@ -112,4 +111,36 @@ footer ul a {
 
 .sie-logo {
     width: 90px;
+}
+
+
+/* Bonus  */
+
+
+#cards img {
+    cursor:pointer; 
+    transition: transform 0.5s;
+}
+
+#cards img:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+#components-playstation img:hover {
+    width: 110px;
+    filter: opacity(1);
+}
+
+
+#components-playstation .hover-text:hover > p {
+    border-bottom: 1px solid blue;
+}
+
+.navbar-nav .nav-link.active {
+    color: grey;
+}
+
+.nav-item:hover > a {
+    color: black!important;
+    font-weight: 500;
 }
